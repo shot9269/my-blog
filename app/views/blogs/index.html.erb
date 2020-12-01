@@ -1,0 +1,6 @@
+<% @blogs.each do |blog|%>
+<%= blog.title%>
+<%= blog.content%>
+
+<% end %>
+<%= link_to "new", new_blog_path%>
