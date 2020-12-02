@@ -10,7 +10,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    message = Blog.create! params.require(:blog).permit(:title, :content).merge(user_id: current_user.id)
+    message = Blog.create! params.require(:blog).permit(:title, :content,:image).merge(user_id: current_user.id)
     redirect_to root_path
   end
 
@@ -21,6 +21,6 @@ class BlogsController < ApplicationController
 
   private
   def blog_params
-    params.require(:blog).permit(:title,:content).merge(user_id: current_user.id)
+    params.require(:blog).permit(:title,:content,:image).merge(user_id: current_user.id)
   end
 end

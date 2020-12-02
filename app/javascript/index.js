@@ -15,8 +15,7 @@ function blog(){
         detail.innerHTML = `
         <div class="blogItem" data-id=${item.id}>
           <p>${item.content.body}</p>
-        </div>
-      `;
+        </div>`;
       }
     });
   });

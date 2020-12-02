@@ -4,11 +4,22 @@
 
 .border{
   margin: 5px;
+  height: 100px;
+  overflow: hidden;
 }
 .main-left{
-  width: 200px;
+  width: 30%;
+  max-width: 250px;
 }
-
+.sub-blog{
+  cursor: pointer;
+}
+.blog-main{
+  border-top: 1px solid black;
+}
+.blogItem{
+  padding: 0 10px;
+}
 .blog-genre-btn{
   margin-top: 10px;
   text-align: center;
