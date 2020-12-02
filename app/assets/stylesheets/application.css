@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+header{
+  height: 44px;
+  padding: 0 20px;
+}
+.head{
+  display: flex;
+}
+.sub-header{
+  height: 154px;
+  padding: 12px 0 16px;
+}

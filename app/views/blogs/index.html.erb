@@ -1,6 +1,18 @@
-<% @blogs.each do |blog|%>
-<%= blog.title%>
-<%= blog.content%>
-
-<% end %>
-<%= link_to "new", new_blog_path%>
+<div class="container">
+  <div class="d-flex bd-highlight">
+    <div class="p-2 bd-highlight main-left">
+      <% @blogs.each do |blog|%>
+        <div class="border">
+          <%= blog.title%>
+          <%= blog.content%>
+        </div>
+      <% end %>
+      <%= link_to "new", new_blog_path%>
+    </div>
+    <div class="p-2 flex-grow-1 bd-highlight">
+      <div class="border">
+        Flex item 3
+      </div>
+    </div>
+  </div>
+</div>
