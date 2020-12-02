@@ -2,7 +2,7 @@
   <div class="d-flex bd-highlight">
     <div class="p-2 bd-highlight main-left">
       <% @blogs.each do |blog|%>
-        <div class="border">
+        <div class="border" id="blog" data-id=<%= blog.id%>>
           <%= blog.title%>
           <%= blog.content%>
         </div>
@@ -10,8 +10,8 @@
       <%= link_to "new", new_blog_path%>
     </div>
     <div class="p-2 flex-grow-1 bd-highlight">
-      <div class="border">
-        Flex item 3
+      <div class="border" id ="blog-detail">
+       
       </div>
     </div>
   </div>

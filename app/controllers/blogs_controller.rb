@@ -14,6 +14,11 @@ class BlogsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @blog = Blog.find(params[:id])
+    render json: {blog: @blog}
+  end
+
   private
   def blog_params
     params.require(:blog).permit(:title,:content).merge(user_id: current_user.id)
