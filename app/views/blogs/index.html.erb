@@ -1,16 +1,18 @@
   <div class="d-flex bd-highlight blog-main">
     <div class="p-2 bd-highlight main-left">
       <% @blogs.each do |blog|%>
+        
         <div class="border sub-blog" id="blog" data-id=<%= blog.id%>>
-          <%= blog.title%>
-          <%= blog.content%>
+          <strong><%= blog.title%></strong>
+          <span class="sub-blog-content"><%= blog.content%></span>
+          
         </div>
       <% end %>
       <%= link_to "new", new_blog_path%>
     </div>
     <div class="p-2 flex-grow-1 bd-highlight">
       <div class="border main-right" id ="blog-detail">
-
+      左のボックスから記事を選んでね
       </div>
     </div>
   </div>

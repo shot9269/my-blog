@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
   before_action :authenticate_user!, only: [:new,:create]
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.where(genre_id: params[:genre_id])
   end
 
   def new
