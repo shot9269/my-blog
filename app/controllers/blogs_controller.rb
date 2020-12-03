@@ -16,7 +16,7 @@ class BlogsController < ApplicationController
 
   def show
     @blog = Blog.find(params[:id])
-    render json: {blog: @blog}
+    render json:{blog: @blog}
   end
 
   private
