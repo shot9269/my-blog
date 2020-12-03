@@ -1,11 +1,10 @@
   <div class="d-flex bd-highlight blog-main">
     <div class="p-2 bd-highlight main-left">
       <% @blogs.each do |blog|%>
-        
         <div class="border sub-blog" id="blog" data-id=<%= blog.id%>>
           <strong><%= blog.title%></strong>
           <span class="sub-blog-content"><%= blog.content%></span>
-          
+          <div class="time"><%= l blog.created_at%></div>
         </div>
       <% end %>
       <%= link_to "new", new_blog_path%>
