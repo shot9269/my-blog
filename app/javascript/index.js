@@ -4,7 +4,6 @@ function blog(){
     blog.addEventListener("click",()=>{
       const blogId = blog.getAttribute("data-id")
       const xhr = new XMLHttpRequest();
-      
       xhr.open("GET",`blogs/${blogId}`, true);
       xhr.responseType = "json";
       xhr.send();

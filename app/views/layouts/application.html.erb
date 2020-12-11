@@ -12,7 +12,7 @@
   <body>
     <header>
       <div class="head">
-        <p>blog タイトル</p>
+        <p><%=link_to "タイトル", root_path%></p>
         <p>今日現在：5,000</p>
       </div>
     </header>
@@ -25,11 +25,11 @@
   </form>
 </nav>
         <div class="blog-genre-btn">
-          <button type="button" class="btn btn-primary" onclick="location.href='/?genre_id=1'">テクニカル</button>       
-          <button type="button" class="btn btn-primary" onclick="location.href='/?genre_id=2'">ファンダメンタル</button>        
-          <button type="button" class="btn btn-primary" onclick="location.href='/?genre_id=3'">書籍</button>        
-          <button type="button" class="btn btn-primary" onclick="location.href='/?genre_id=4'">思ったこと</button>   
-          <button type="button" class="btn btn-primary" onclick="location.href='/?genre_id=5'">相談室</button>   
+          <button type="button" class="btn btn-secondary" onclick="location.href='/?genre_id=1'">テクニカル</button>       
+          <button type="button" class="btn btn-secondary" onclick="location.href='/?genre_id=2'">ファンダメンタル</button>        
+          <button type="button" class="btn btn-secondary" onclick="location.href='/?genre_id=3'">書籍</button>        
+          <button type="button" class="btn btn-secondary" onclick="location.href='/?genre_id=4'">思ったこと</button>   
+          <button type="button" class="btn btn-secondary" onclick="location.href='/?genre_id=5'">相談室</button>   
         </div>     
       </div>
     </div>
