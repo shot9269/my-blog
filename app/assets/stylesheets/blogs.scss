@@ -1,0 +1,47 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.border{
+  margin: 5px;
+  height: 200px;
+  overflow: hidden;
+}
+.main-left{
+  width: 30%;
+  max-width: 250px;
+}
+.sub-blog{
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+.sub-blog-content{
+  color:gray;
+}
+
+.time{
+  display: block;
+  width: 90%;
+  font-size: 10px;
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+}
+.blog-main{
+  border-top: 1px solid black;
+}
+.blogItem{
+  padding: 0 10px;
+}
+.blog-genre-btn{
+  margin-top: 10px;
+  text-align: center;
+}
+.main-right{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
